@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="styles.css" />
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
         <script src="scripts.js" defer></script>
-        <title>Frontend Mentor | Conference ticket generator</title>
+        <title>Conference ticket generator</title>
     </head>
     <body>
         <header>
@@ -27,9 +27,11 @@
             </h2>
         </header>
         <!-- Form starts -->
+    
+        <h2>Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p>Secure your spot at next
+        year's biggest coding conference.</p>
 
-        <h2>Your Journey to Coding Conf 2025 Starts Here!</h1> Secure your spot at next
-        year's biggest coding conference.
         <form>
 
         </form>
@@ -39,12 +41,12 @@
             <span>Drag and drop or click to upload</span>
             <span>Upload your photo (JPG or PNG, max size: 500KB).</span>
             <label>Full Name</label>
-            <input></input>
+            <input type="text" autocomplete="name" id="fullName"></input>
             <label>Email Address</label>
-            <input type="email" autocomplete="email" placeholder="example@email.com"></input>
+            <input type="email" autocomplete="email" placeholder="example@email.com" id="email"></input>
             <label>GitHub Username</label>
-            <input type="text" placeholder="@yourusername"></input>
-            <button>Generate My Ticket</button>
+            <input type="text" placeholder="@yourusername" id="ghName"></input>
+            <button id="genBtn">Generate My Ticket</button>
 
         <!-- Form ends -->
 
